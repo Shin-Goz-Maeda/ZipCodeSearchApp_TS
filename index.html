@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>住所検索app</title>
-  <meta name="description" content="住所を検索できるWEBAPPを制作しました。">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <form id="contact">
-    <div id="container">
-      <div class="head">
-        <h2>住所検索アプリ</h2>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>住所検索app</title>
+    <meta name="description" content="住所を検索できるWEBAPPを制作しました。">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form id="contact">
+      <div id="container">
+        <div class="head">
+          <h2>住所検索アプリ</h2>
+        </div>
+        <div class="boxes">
+          <input type="text" name="住所入力ボックス" id="inputBox"  class="search" placeholder="例 0001111" value="">
+          <input type="submit" name="送信ボタン" value="住所検索" id="button" class="search">
+        </div>
+        <div>
+          <h3>検索結果</h3>
+        </div>
+        <div id="searchResults" class="boxes">
+          <input type="text" value="" id="address1" placeholder="都道府県">
+          <input type="text" value="" id="address2" placeholder="市町村">
+          <input type="text" value="" id="address3" placeholder="番地">
+        </div>
       </div>
-      <div class="boxes">
-        <input type="text" name="住所入力ボックス" id="inputBox"  class="search" placeholder="例: 0001111" value="">
-        <input type="submit" name="送信ボタン" value="住所検索" id="button" class="search">
-      </div>
-      <div>
-        <h3>検索結果</h3>
-      </div>
-      <div id="searchResults" class="boxes">
-        <input type="text" value="" id="address1" placeholder="都道府県">
-        <input type="text" value="" id="address2" placeholder="市町村">
-        <input type="text" value="" id="address3" placeholder="番地">
-      </div>
-    </div>
-  </form>
-  <script src="main.js" type="javascript/text"></script>
-</body>
+    </form>
+    <script src="main.js" type="javascript/text"></script>
+  </body>
 </html>

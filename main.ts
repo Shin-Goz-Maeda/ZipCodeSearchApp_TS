@@ -6,7 +6,7 @@ let button: any = document.getElementById('button');
 
 function getAddress() {
   let zipCode: number = inputBox.value;
-  let url = `https://zipcloud.ibsnet.co.jp/api/search?zipcode=${zipCode}`;
+  let url: any = `https://zipcloud.ibsnet.co.jp/api/search?zipcode=${zipCode}`;
   fetch(url)
     .then(function(response) {
       return response.json();
